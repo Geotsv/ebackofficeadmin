@@ -1,0 +1,35 @@
+1. php artisan make:model Customer -mcr
+2. Add to $fillable, define columns for migration
+3. Add factory data for php artisan db:seed
+4. CRUD
+5. client and server side validation
+
+
+TODO:
+
+5.
+- roles (basically get roles of loggedInUser then conditional rendering)
+
+https://medium.com/@afrazahmad090/laravel-many-to-many-relationship-explained-822b554c1973
+https://www.itsolutionstuff.com/post/laravel-one-to-many-eloquent-relationship-tutorialexample.html
+https://stackoverflow.com/questions/1125968/how-do-i-force-git-pull-to-overwrite-local-files
+
+CMDs:
+git clone https://github.com/Geotsv/ebackofficeadmin.git
+add .env file and create DB
+composer install
+npm install
+php artisan serve
+npm run watch (npm run production for prod)
+
+create the directory EbackOfficeAdmin\storage\app\public\announcementImages
+Add MIX_API_URL=http://localhost:8000/api
+Add MIX_BASE_URL=http://localhost:8000
+
+
+To run schedule work in background: 
+php artisan schedule:work &
+
+To disable a background running command, first list all the process id then kill the id
+ps - aux   --- to list all linux PID
+kill 73287 --- to kill the PID listed

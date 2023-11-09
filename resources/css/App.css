@@ -1,0 +1,467 @@
+.centerH {
+    margin-left: auto;
+    margin-right: 20px;
+    width: 92%;
+    padding: 10px;
+}
+
+.homeImage {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+}
+
+.headertekst {
+    text-align: center;
+    width: 100%;
+    color: #4caf50;
+    padding: 20px;
+}
+
+.centerVaH {
+    height: 600px;
+    left: 20%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.sideBarHeader {
+    margin: auto;
+    padding: 10px;
+}
+
+#sidebar .clickable {
+    cursor: pointer;
+}
+
+#sidebar .pro-sidebar {
+    width: 20px;
+    min-height: 100vh;
+    height: 135%;
+}
+
+#sidebar .pro-icon-wrapper {
+   color: white;
+   background-color: rgb(54, 54, 106);
+}
+
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item{
+    background-color: black;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item > .pro-icon-wrapper {
+    display: inline-block !important;
+}
+
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item:before {
+    content: none !important;
+}
+
+/* .pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu .pro-inner-list-item .pro-inner-item .pro-item-content:hover {
+    color: rgb(142, 142, 248);
+} */
+
+.sidebar-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-btn {
+    padding: 1px 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0);
+    color: #f0efef;
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.delete {
+    position: relative;
+    margin-bottom: 10px;
+    width: 150px;
+}
+
+.react-datepicker__input-container {
+    width: inherit;
+} 
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+.react-datepicker-popper{
+    z-index: 9999 !important;
+}
+
+.select-search {
+    width: 100%;
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.select-search *,
+.select-search *::after,
+.select-search *::before {
+    box-sizing: inherit;
+}
+
+/**
+ * Value wrapper
+ */
+.select-search__value {
+    position: relative;
+    z-index: 1;
+}
+
+.select-search__value::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: calc(50% - 9px);
+    right: 19px;
+    width: 11px;
+    height: 11px;
+}
+
+/**
+ * Input
+ */
+.select-search__input {
+    display: block;
+    height: 36px;
+    width: 100%;
+    padding: 0 40px 0 16px;
+    background: #fff;
+    border: 1px solid transparent;
+    box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    text-overflow: ellipsis;
+    line-height: 36px;
+    -webkit-appearance: none;
+}
+
+.select-search__input::-webkit-search-decoration,
+.select-search__input::-webkit-search-cancel-button,
+.select-search__input::-webkit-search-results-button,
+.select-search__input::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+}
+
+.select-search__input:not([readonly]):focus {
+    cursor: initial;
+}
+
+/**
+ * Options wrapper
+ */
+.select-search__select {
+    background: #fff;
+    box-shadow: 0 .0625rem .125rem rgba(0, 0, 0, 0.15);
+}
+
+/**
+ * Options
+ */
+.select-search__options {
+    list-style: none;
+}
+
+/**
+ * Option row
+ */
+.select-search__row:not(:first-child) {
+    border-top: 1px solid #eee;
+}
+
+/**
+ * Option
+ */
+.select-search__option,
+.select-search__not-found {
+    display: block;
+    height: 36px;
+    width: 100%;
+    padding: 0 16px;
+    background: #fff;
+    border: none;
+    outline: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.select-search--multiple .select-search__option {
+    height: 48px;
+}
+
+.select-search__option.is-selected {
+    background: #808583;
+    color: #fff;
+}
+
+.select-search__option.is-highlighted,
+.select-search__option:not(.is-selected):hover {
+    background: rgba(181, 190, 187, 0.1);
+}
+
+.select-search__option.is-highlighted.is-selected,
+.select-search__option.is-selected:hover {
+    background: rgb(77, 83, 81);
+    color: #fff;
+}
+
+/**
+ * Group
+ */
+.select-search__group-header {
+    font-size: 10px;
+    text-transform: uppercase;
+    background: #eee;
+    padding: 8px 16px;
+}
+
+/**
+ * States
+ */
+.select-search.is-disabled {
+    opacity: 0.5;
+}
+
+.select-search.is-loading .select-search__value::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Cpath fill='%232F2D37' d='M25,5A20.14,20.14,0,0,1,45,22.88a2.51,2.51,0,0,0,2.49,2.26h0A2.52,2.52,0,0,0,50,22.33a25.14,25.14,0,0,0-50,0,2.52,2.52,0,0,0,2.5,2.81h0A2.51,2.51,0,0,0,5,22.88,20.14,20.14,0,0,1,25,5Z'%3E%3CanimateTransform attributeName='transform' type='rotate' from='0 25 25' to='360 25 25' dur='0.6s' repeatCount='indefinite'/%3E%3C/path%3E%3C/svg%3E");
+    background-size: 11px;
+}
+
+.select-search:not(.is-disabled) .select-search__input {
+    cursor: pointer;
+}
+
+/**
+ * Modifiers
+ */
+.select-search--multiple {
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.select-search:not(.is-loading):not(.select-search--multiple) .select-search__value::after {
+    transform: rotate(45deg);
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    pointer-events: none;
+}
+
+.select-search--multiple .select-search__input {
+    cursor: initial;
+}
+
+.select-search--multiple .select-search__input {
+    border-radius: 3px 3px 0 0;
+}
+
+.select-search--multiple:not(.select-search--search) .select-search__input {
+    cursor: default;
+}
+
+.select-search:not(.select-search--multiple) .select-search__input:hover {
+    border-color: #b0b9b6;
+}
+
+
+.select-search:not(.select-search--multiple) .select-search__select {
+    /* position: absolute;
+    z-index: 2; */
+    top: 44px;
+    right: 0;
+    left: 0;
+    border-radius: 3px;
+    overflow: auto;
+    max-height: 360px;
+}
+
+.select-search--multiple .select-search__select {
+    position: relative;
+    overflow: auto;
+    max-height: 260px;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 3px 3px;
+}
+
+.select-search__not-found {
+    height: auto;
+    padding: 16px;
+    text-align: center;
+    color: #888;
+}
+
+html,
+body,
+body > div { /* the react root */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 0 0 1.5em;
+}
+
+li {
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+b { /* used for event dates/times */
+  margin-right: 3px;
+}
+
+.demo-app {
+  display: flex;
+  min-height: 100%;
+  font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.demo-app-sidebar {
+  width: 300px;
+  line-height: 1.5;
+  background: #eaf9ff;
+  border-right: 1px solid #d3e2e8;
+}
+
+.demo-app-sidebar-section {
+  padding: 2em;
+}
+
+.demo-app-main {
+  flex-grow: 1;
+  padding: 3em;
+}
+
+.fc { /* the calendar root */
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.editor-class {
+    padding: 1rem;
+    border: 1px solid #e7e4e4;
+}
+
+.ReactModalPortal {
+    display: inline;
+}
+
+a:visited{
+    color:black;
+}
+
+.swalDelete {
+    background: red;
+}
+
+.swalEdit {
+    background: green;
+}
+
+.swalCancel {
+    background: blue;
+}
+
+.logoutButton {
+    padding: 1px 15px;
+    background: blue; /* Set the background color to blue */
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: #220677;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-block;
+    border: 0.1em solid grey;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: white; /* Set text color to white */
+    text-align: center;
+    transition: all 0.2s;
+}
+
+
+.logoutButton:hover{
+    color: rgb(152, 241, 50);
+    border-color: #000000;
+}
+
+.changePasswordButton {
+    padding: 1px 15px;
+    border-radius: 50%; /* Rounded corners for the button */
+    background: red; /* Set the background color to red */
+    margin: 0 auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Set text color to white */
+    border-color: #282424;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    border: 0.1em solid grey;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+
+.changePasswordButton:hover{
+    color: rgb(13, 9, 247) !important;
+    border-color: #000000;
+    background: rgb(255, 217, 0);
+}
+
+/* .card, .card-body, .react-strap-table, .text-center, .card-footer{
+    position:relative;
+    z-index:0;
+} */
