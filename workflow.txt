@@ -33,3 +33,4 @@ php artisan schedule:work &
 To disable a background running command, first list all the process id then kill the id
 ps - aux   --- to list all linux PID
 kill 73287 --- to kill the PID listed
+123
